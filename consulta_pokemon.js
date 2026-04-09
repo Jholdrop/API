@@ -1,3 +1,5 @@
+﻿let a;
+do{
 const prompt = require ('prompt-sync')();
 let pokemon = prompt("Digite o pokemon:");
 const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`
@@ -31,4 +33,6 @@ console.log("ataques que podem ser aprendidos:")
      else if(geracao === "generation-v") geracao = "Geração 5";
      else if (geracao === "generation-vi") geracao = "Geração 6";
      console.log(geracao);
+     a = prompt("0-Continuar, 1-Sair\n")
       })
+    }while(a === "0")
